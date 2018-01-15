@@ -1,1 +1,7 @@
-@import "../basic.scss";
+@import "helpers/variables";
+
+@import "helpers/mixins";
+
+@import "basic/basic";
+
+@import "header/header";

@@ -7,64 +7,87 @@
     <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
     <meta content="telephone=no" name="format-detection" />
     <link rel="stylesheet" type="text/css" href="./src/style.css">
-    <link rel="shortcut icon" type="image/png" href="./img/favicon.png"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600,700|Open+Sans:300,400,600&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-    <title>Portfolio | About</title>
+
+    <!--favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
+    <link rel="manifest" href="./favicons/manifest.json">
+    <link rel="mask-icon" href="./favicons/safari-pinned-tab.svg" color="#008e70">
+    <meta name="theme-color" content="#ffffff">
+    <!--favicons-->
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <title>Инсаюр - Медикал Дента</title>
 </head>
+
 <body id="body">
     <header class="header">
-        <div class="container">
-            <div class="container__row container__row--space">
-              <div class="top-info">
-                   <img class="top-info__img" src="./img/scrubs1.png" alt="avatar" title="avatar"/>
-                   <div class="top-info__name">Анатолий Анатольев</div>
-              </div>
-              <div class="top-link">
-                  <div class="top-link__link"><a class="link link--top" href="#">Мои контакты</a></div>
-                  <a class="top-link__icon" href="#"><i class="fa fa-phone fa-fw fa-3x"></i></a>
-                  <!--<div class="top-link__triangle"></div>
-                  <div class="top-link__triangle--small"></div>-->
-                  <div class="top-link__dropdown">
-                      <i class="fa fa-envelope fa-fw"></i><a class="link link--drop" href="mailto:anatoly@mail.ru">anatoly@mail.ru</a>
-                      <i class="fa fa-phone fa-fw"></i><a class="link link--drop" href="tel:+79873456212">+7 (987) 345-62-12</a>
-                      <i class="fa fa-skype fa-fw"></i><a class="link link--drop" href="skype:anatoly_">anatoly_</a>
-                  </div>
-              </div>
-            </div>
-        </div>
-    </header>
-    <div class="content">
-        <div class="container">
-          <div class="container__row container__row--space">
-              <nav class="side-nav">
-                  <a class="side-nav__link side-nav__link--current" href="#"><i class="fa fa-user-secret fa-fw"></i>Обо мне</a>
-                  <a class="side-nav__link" href="career.html"><i class="fa fa-rocket fa-fw"></i>Карьерный путь</a>
-                  <a class="side-nav__link" href="portfolio.html"><i class="fa fa-briefcase fa-fw"></i>Портфолио</a>
-              </nav>
-              <div>
-                <div class="main-info">
-                    <img class="main-info__pic" src="./img/photo.png" alt="avatar" title="avatar">
-                    <div class="main-info__text">
-                        <h1 class="text text--big">
-                            Обо мне
-                        </h1>
-                        <p class="text text--info  mCustomScrollbar" data-mcs-theme="dark-3">
-                            Меня зовут Анатолий. Проживаю в городе Тольятти. В последнее время открыл для себя много интересного в JavaScript и всех сопутствующих тенденциях от Microsoft:ASP.NET 4, Knockout, SignalR, Upshot. Учусь писать тестируемый код на net. Делю логику на классы(стараюсь не забывать SOLID принципы) и тестировать юнит тестами. Хорошо пишу процедуры для MySQL. Чувствую в себе слабое владение client side и поэтому стараюсь восполнить данную нишу по мере возможностей. Из последних книг которые прочитал могу выделить: Professional ASP.NET MVC 3, JavaScript: The Good Parts, прочел много статей и туториалов. Знаком с “бандой четырех” и стараюсь использовать паттерны и практики где это необходимо и оправданно. Прочитал паттерны несколько раз но все равно есть непонимание некоторых моментов. Макконела также не обошел стороной. Иногда Читаю Фаулера выборочно: рефакторинг, PoEAA. Проблем с 5+ лет в IT было решено много разных.
-                        </p>
+        <div class="header__top">
+            <div class="container container--htop">
+                <div class="contacts-area">
+                    <div class="contacts-area__block contacts-area__block--phone">
+                        <a class="link link--contacts" href="tel:8482773384">(8482) 77-33-84,</a>
+                        <a class="link link--contacts" href="tel:8482773385">77-33-85,</a>
+                        <a class="link link--contacts" href="tel:8482773386">77-33-86</a>
+                    </div>
+                    <div class="contacts-area__block contacts-area__block--callback">
+                        <a class="link link--contacts" href="#">Обратный звонок</a>
+                    </div>
+                    <div class="contacts-area__block contacts-area__block--address">
+                        <a class="link link--contacts" href="#">Тольятти, Ленинградская, 45</a>
                     </div>
                 </div>
-                <div style="clear: both"></div>
-                <div class="button-area">
-                    <a class="button button--red" href="#">
-                        <i class="fa fa-download fa-fw"></i>Скачать резюме
+                <div class="button button--green button--sign-up">
+                    <a class="button__link button__link--green button__link--sign-up" href="#">
+                        Записаться на прием
                     </a>
                 </div>
-                <div style="clear: right"></div>
-              </div>
-          </div>
+                <div style="clear: both"></div>
+            </div>
+            </div>
+            <div class="header__bottom">
+                <div class="container container--hbottom">
+                    <a class="logo" href="./index.html">
+                        <img class="logo__img" src="../images/logo.png" alt="Инсаюр Медикал-Дента" title="Инсаюр Медикал-Дента"/>
+                    </a>
+                    <nav class="top-nav">
+                        <a class="top-nav__link" href="#">
+                            Услуги
+                        </a>
+                        <a class="top-nav__link" href="#">
+                            Галерея работ
+                        </a>
+                        <a class="top-nav__link" href="#">
+                            Цены
+                        </a>
+                        <a class="top-nav__link" href="#">
+                            Статьи
+                        </a>
+                        <a class="top-nav__link" href="#">
+                            Вопрос ответ
+                        </a>
+                        <a class="top-nav__link" href="#">
+                            Сотрудники
+                        </a>
+                        <a class="top-nav__link" href="#">
+                            Контакты
+                        </a>
+                        <a class="top-nav__link" href="#">
+                            Лицензия
+                        </a>
+                    </nav>
+                </div>
+            </div>
+    </header>
+
+    <div class="content">
+        <div class="container--content">
+            <div class="first-screen">
+            </div>
         </div>
     </div>
+
     <footer class="footer">
         <div class="container">
             <div class="legal">
@@ -79,7 +102,5 @@
         </div>
         <div style="clear: both"></div>
     </footer>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
 </body>
 </html>

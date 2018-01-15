@@ -1,0 +1,78 @@
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.header__top {
+    background: $dark-grey;
+    height: 50px;
+}
+
+.contacts-area {
+    @include flex ();
+    float: left;
+
+    &__block {
+        @include flex ();
+        margin-right: 32px;
+        height: 50px;
+        align-items: center;
+        background-position: left center;
+        background-repeat: no-repeat;
+        padding-left: 28px;
+
+        &--phone {
+            background-image: url('../images/SVG/phone.svg');
+        }
+
+        &--callback {
+            background-image: url('../images/SVG/callback.svg');
+        }
+
+        &--address {
+            background-image: url('../images/SVG/location.svg');
+        }
+    }
+}
+
+.link--contacts {
+    display: inline-block;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: white;
+    padding-right: 5px;
+
+    &:hover {
+        color: $teal;
+    }
+}
+
+.button--sign-up {
+    float: right;
+    height: 50px;
+    width: 232px;
+    background-image: url('../images/SVG/appointment-register.svg');
+    background-position: 40px center;
+    background-repeat: no-repeat;
+    padding-left: 28px;
+
+    &:hover {
+        background-image: url('../images/SVG/appointment-register-active.svg');
+    }
+}
+
+.header__bottom {
+    height: 91px;
+    padding-top: 22px;
+}
+
+.top-nav {
+    margin-left: 32px;
+
+    &__link {
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+}

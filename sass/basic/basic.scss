@@ -1,3 +1,52 @@
 body {
+    background: white;
+}
+
+*{
+    margin: 0;
+    font-family: $font-stack;
+    font-size: $basic-font-size;
+}
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.container--hbottom {
+    @include flex();
+}
+
+.link {
+    text-decoration: none;
+}
+
+.button {
+    @include flex ();
+    align-items: center;
+    justify-content: center;
+
+    &__link {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 12px;
+        text-decoration: none;
+
+        &--green {
+            color: white;
+        }
+
+        &--grey {
+            color: #323232;
+        }
+    }
+}
+
+.button--green {
     color: white;
+    background-color: #4cb050;
+
+    &:hover {
+        background-color: #8cc63f;
+    }
 }
