@@ -1,0 +1,79 @@
+.footer {
+    background: $dark-grey;
+}
+
+.footer-row {
+    padding: 40px 0;
+    box-sizing: border-box;
+
+        &--first {
+            border-bottom: 1px solid #4d4d4d;
+        }
+
+        &--second {
+            @include flex ();
+            justify-content: space-between;
+        }
+
+        &__text {
+            color: $mid-grey;
+            font-size: 14px;
+        }
+
+        &__link {
+            text-decoration: none;
+            color: $mid-grey;
+            font-size: 14px;
+            border-bottom: 1px solid $mid-grey;
+
+            &:hover {
+                border-bottom: none;
+            }
+        }
+    }
+
+
+.social {
+    @include flex ();
+    float: right;
+
+    &__link {
+        border: none;
+        height: 20px;
+        padding-left: 20px;
+        text-decoration: none;
+        width: 20px;
+
+        &--fb {
+            background: url('../images/svg/fb.svg') right no-repeat;
+        }
+
+        &--vk {
+            background: url('../images/svg/vk.svg') right no-repeat;
+            }
+
+        &--insta {
+            background: url('../images/svg/insta.svg') right no-repeat;
+        }
+
+        &--ok {
+            background: url('../images/svg/odnoklassniki.svg') right no-repeat;
+        }
+
+        &--fb:hover {
+            background: url('../images/svg/fb-hover.svg') right no-repeat;
+        }
+
+        &--vk:hover {
+            background: url('../images/svg/vk-hover.svg') right no-repeat;
+        }
+
+        &--insta:hover {
+            background: url('../images/svg/insta-hover.svg') right no-repeat;
+        }
+
+        &--ok:hover {
+            background: url('../images/svg/odnoklassniki-hover.svg') right no-repeat;
+        }
+    }
+}

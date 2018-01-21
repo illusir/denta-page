@@ -7,6 +7,9 @@
     <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
     <meta content="telephone=no" name="format-detection" />
     <link rel="stylesheet" type="text/css" href="./src/style.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./slick/slick/slick-theme.css"/>
+
 
     <!--favicons-->
     <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
@@ -22,6 +25,9 @@
 </head>
 
 <body id="body">
+
+    <!--header-->
+
     <header class="header">
         <div class="header__top">
             <div class="container container--htop">
@@ -51,29 +57,29 @@
                     <a class="logo" href="./index.html">
                         <img class="logo__img" src="../images/logo.png" alt="Инсаюр Медикал-Дента" title="Инсаюр Медикал-Дента"/>
                     </a>
-                    <nav class="top-nav">
-                        <a class="top-nav__link" href="#">
+                    <nav class="nav nav--top">
+                        <a class="nav__link nav__link--top" href="#">
                             Услуги
                         </a>
-                        <a class="top-nav__link" href="#">
+                        <a class="nav__link nav__link--top" href="#">
                             Галерея работ
                         </a>
-                        <a class="top-nav__link" href="#">
+                        <a class="nav__link nav__link--top" href="#">
                             Цены
                         </a>
-                        <a class="top-nav__link" href="#">
+                        <a class="nav__link nav__link--top" href="#">
                             Статьи
                         </a>
-                        <a class="top-nav__link" href="#">
+                        <a class="nav__link nav__link--top" href="#">
                             Вопрос ответ
                         </a>
-                        <a class="top-nav__link" href="#">
+                        <a class="nav__link nav__link--top" href="#">
                             Сотрудники
                         </a>
-                        <a class="top-nav__link" href="#">
+                        <a class="nav__link nav__link--top" href="#">
                             Контакты
                         </a>
-                        <a class="top-nav__link" href="#">
+                        <a class="nav__link nav__link--top" href="#">
                             Лицензия
                         </a>
                     </nav>
@@ -81,26 +87,185 @@
             </div>
     </header>
 
-    <div class="content">
-        <div class="container--content">
-            <div class="first-screen">
+    <!--first screen-->
+
+    <div class="first-screen">
+        <div class="container container--first-screen">
+            <button class="slider-arrow slider-arrow--left">
+            </button>
+            <div class='slider-body'>
+              <div class='slider-firstscreen'>
+                    <div class="slider-firstscreen__content">
+                        <h1 class="headline headline--h1 headline--firstscreen">
+                            20% скидка на лечение зубов
+                        </h1>
+                        <p class="text text--1stslider">
+                            С 9 по 15 октября
+                        </p>
+                        <div class="button button--1stscreen button--232">
+                            <a href="#" class="button__link button__link--green">Посмотреть подробнее</a>
+                        </div>
+                    </div>
+                    <div class="slider-content">
+                        <h1 class="headline headline--h1 headline--firstscreen">
+                            30% скидка на лечение зубов
+                        </h1>
+                        <p class="text text--1stslider">
+                            С 10 по 17 января
+                        </p>
+                        <div class="button button--1stscreen button--232">
+                            <a href="#" class="button__link button__link--green">Посмотреть подробнее</a>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="slider-arrow slider-arrow--right">
+                </button>
+                <a class="arrow-down" href="#go-to-services">
+                </a>
+                <div class="helper-block" id="go-to-services">
+                </div>
             </div>
         </div>
+
+        <!--content-->
+
+    <div class="content">
+        <div class="services">
+            <div class="container container--services">
+                <h2 class="headline headline--h2">
+                    Наши услуги
+                </h2>
+                <div class="services-list">
+                    <div class="services-list__item services-list__item--treatment">
+                        <a class="link link--services" href="#">Лечение</a>
+                    </div>
+                    <div class="services-list__item services-list__item--prothesis">
+                        <a class="link link--services" href="#">Протезирование</a>
+                    </div>
+                    <div class="services-list__item services-list__item--implant">
+                        <a class="link link--services" href="#">Имплантация</a>
+                    </div>
+                    <div class="services-list__item services-list__item--ortodont">
+                        <a class="link link--services" href="#">Ортодонтия</a>
+                    </div>
+                    <div class="services-list__item services-list__item--kids">
+                        <a class="link link--services" href="#">Лечение детей</a>
+                    </div>
+                    <div class="services-list__item services-list__item--whitening">
+                        <a class="link link--services" href="#">Отбеливание</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about">
+            <div class="container container--about">
+                <h2 class="headline headline--h2 headline--white">
+                    О нас
+                </h2>
+                <div class="slider-area slider-area--about">
+                <button class="about-arrow about-arrow--left">
+                </button>
+                <div class='slider-body'>
+                  <div class='slider-about'>
+                        <div class="slider-about__content">
+                            <p class="text text--aboutslider">
+                                Наша клиника основана в 1995 году. Работая более двух десятилетий, мы накопили большой опыт и
+                                продолжаем осваивать новые технологии и методы лечения. Наши специалисты могут помочь вам в любой
+                                ситуации.
+                            </p>
+                        </div>
+                        <div class="slider-about__content">
+                            <p class="text text--aboutslider">
+                                Сотрудники клиники совершенствуют свои знания и навыки, ежегодно посещая конференции и
+                                мастер-классы. Врачи уделяют особое внимание диагностике и тщательному соблюдению технологий
+                                лечения. В работе используются инструменты и материалы японских, американских и немецких
+                                производителей, а качество находится под контролем на всех этапах лечения.
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="about-arrow about-arrow--right">
+                    </button>
+                </div>
+                </div>
+            </div>
     </div>
 
+    <!--footer-->
+
     <footer class="footer">
-        <div class="container">
-            <div class="legal">
-                <p class="legal__info">
-                    &copy; Конфиденциальность сайта
-                </p>
+        <div class="container container--footer">
+            <div class="footer-row footer-row--first">
+                <nav class="nav nav--bottom">
+                    <a class="nav__link nav__link--bottom" href="#">
+                        Услуги
+                    </a>
+                    <a class="nav__link nav__link--bottom" href="#">
+                        Галерея работ
+                    </a>
+                    <a class="nav__link nav__link--bottom" href="#">
+                        Цены
+                    </a>
+                    <a class="nav__link nav__link--bottom" href="#">
+                        Статьи
+                    </a>
+                    <a class="nav__link nav__link--bottom" href="#">
+                        Вопрос ответ
+                    </a>
+                    <a class="nav__link nav__link--bottom" href="#">
+                        Сотрудники
+                    </a>
+                    <a class="nav__link nav__link--bottom" href="#">
+                        Контакты
+                    </a>
+                    <a class="nav__link nav__link--bottom" href="#">
+                        Лицензия
+                    </a>
+                </nav>
+                <div class="social">
+                    <a class="social__link social__link--vk" target="_blank" href="https://vk.com"></a>
+                    <a class="social__link social__link--fb" target="_blank" href="https://facebook.com"></a>
+                    <a class="social__link social__link--insta" target="_blank" href="https://instagram.com"></a>
+                    <a class="social__link social__link--ok" target="_blank" href="https://ok.ru"></a>
+                </div>
+                <div style="clear: both"></div>
+            </div>
+            <div class="footer-row footer-row--second">
+                <span class="footer-row__text">
+                    &copy; 2017 Инсаюр Медикал-Дента
+                </span>
+                <a class="footer-row__link" href="#">
+                    Лицензия ЛО-63-01-004212 от 06.04.2017
+                </a>
+                <a class="footer-row__link" href="#">
+                    Политика конфеденциальности
+                </a>
+                <span class="footer-row__text">
+                    Сделано в
+                    <a class="footer-row__link" href="http://weblime.ru/">
+                        Веблайме
+                    </a>
+                </span>
+            </div>
         </div>
-        <div class="social">
-            <a class="social__link social__link--fb" target="_blank" href="https://facebook.com"></a>
-            <a class="social__link social__link--vk" target="_blank" href="https://vk.com"></a>
-            <a class="social__link social__link--tw" target="_blank" href="https://twitter.com"></a>
-        </div>
-        <div style="clear: both"></div>
     </footer>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./slick/slick/slick.min.js"></script>
+    <script src="./js/slick-init.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(window).on('scroll',function(){
+                if ($(window).scrollTop() > 10 ){
+                    $('.header__bottom').addClass("header__bottom--move");
+                }
+                else {
+                    $('.header__bottom').removeClass("header__bottom--move");
+                }
+            });
+        });
+    </script>
 </body>
 </html>

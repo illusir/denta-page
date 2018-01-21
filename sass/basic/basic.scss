@@ -13,10 +13,6 @@ body {
     margin: 0 auto;
 }
 
-.container--hbottom {
-    @include flex();
-}
-
 .link {
     text-decoration: none;
 }
@@ -25,6 +21,25 @@ body {
     @include flex ();
     align-items: center;
     justify-content: center;
+    height: 60px;
+    cursor: pointer;
+
+    &--232 {
+        width: 232px;
+    }
+
+    &--320 {
+        width: 320px;
+    }
+
+    &--green {
+        color: white;
+        background-color: $grass-green;
+
+        &:hover {
+            background-color: $light-green;
+        }
+    }
 
     &__link {
         text-decoration: none;
@@ -42,11 +57,22 @@ body {
     }
 }
 
-.button--green {
-    color: white;
-    background-color: #4cb050;
+.headline {
+    text-transform: uppercase;
 
-    &:hover {
-        background-color: #8cc63f;
+    &--h1 {
+        font-size: $h1-font-size;
+        color: white;
+    }
+
+    &--h2 {
+        font-weight: normal;
+        font-size: $h2-font-size;
+        color: $teal;
+        padding-top: 56px;
+    }
+
+    &--white {
+        color: white;
     }
 }

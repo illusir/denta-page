@@ -1,0 +1,113 @@
+.services {
+    background: $light-grey;
+}
+
+.services-list {
+    @include flex();
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: flex-start;
+    padding-bottom: 56px;
+
+    &__item {
+        @include flex();
+        background: white;
+        align-items: center;
+        justify-content: flex-start;
+        height: 100px;
+        width: 320px;
+        margin-top: 32px;
+        margin-right: 32px;
+
+        &:nth-child(3n+3) {
+            margin-right: 0;
+        }
+
+        &:hover {
+            background: $teal;
+        }
+
+        &--treatment {
+            background-image: url('../images/svg/test-icons/treatment.svg');
+            background-position: 32px center;
+            background-repeat: no-repeat;
+
+            &:hover {
+                background-image: url('../images/svg/test-icons/treatment-hover.svg');
+                background-position: 32px center;
+                background-repeat: no-repeat;
+            }
+        }
+
+        &--prothesis {
+            background-image: url('../images/svg/test-icons/prothesis.svg');
+            background-position: 32px center;
+            background-repeat: no-repeat;
+
+            &:hover {
+                background-image: url('../images/svg/test-icons/prothesis-hover.svg');
+                background-position: 32px center;
+                background-repeat: no-repeat;
+            }
+        }
+
+        &--implant {
+            background-image: url('../images/svg/test-icons/implant.svg');
+            background-position: 32px center;
+            background-repeat: no-repeat;
+
+            &:hover {
+                background-image: url('../images/svg/test-icons/implant-hover.svg');
+                background-position: 32px center;
+                background-repeat: no-repeat;
+            }
+        }
+
+        &--ortodont {
+            background-image: url('../images/svg/test-icons/ortodont.svg');
+            background-position: 32px center;
+            background-repeat: no-repeat;
+
+            &:hover {
+                background-image: url('../images/svg/test-icons/ortodont-hover.svg');
+                background-position: 32px center;
+                background-repeat: no-repeat;
+            }
+        }
+
+        &--kids {
+            background-image: url('../images/svg/test-icons/kids.svg');
+            background-position: 32px center;
+            background-repeat: no-repeat;
+
+            &:hover {
+                background-image: url('../images/svg/test-icons/kids-hover.svg');
+                background-position: 32px center;
+                background-repeat: no-repeat;
+            }
+        }
+
+        &--whitening {
+            background-image: url('../images/svg/test-icons/whitening.svg');
+            background-position: 32px center;
+            background-repeat: no-repeat;
+
+            &:hover {
+                background-image: url('../images/svg/test-icons/whitening-hover.svg');
+                background-position: 32px center;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}
+
+.link--services {
+    font-size: 18px;
+    color: $dark-grey;
+    text-transform: uppercase;
+    padding-left: 110px;
+}
+
+.services-list__item:hover .link--services {
+    color: white;
+}
