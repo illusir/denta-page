@@ -1,0 +1,61 @@
+.slider-area--feedback {
+    @include flex();
+    align-items:stretch;
+    justify-content: space-between;
+    background: $light-grey;
+}
+
+.feedback-arrow {
+    background: #e6e6e6;
+    width: 56px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &:hover {
+        background: #cccccc;
+    }
+
+    &--left {
+        background-image: url('../images/svg/arrow-green-left.svg');
+
+        &:hover {
+            background-image: url('../images/svg/arrow-green-left.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &--right {
+        background-image: url('../images/svg/arrow-green-right.svg');
+
+        &:hover {
+            background-image: url('../images/svg/arrow-green-right.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+
+}
+
+.text--feedback {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 32px;
+}
+
+.text--name {
+    font-size: 14px;
+    font-style: italic;
+}
+
+.slider-feedback {
+    padding: 32px;
+}
+
+.button-area--feedback {
+    @include flex ();
+    margin: 32px 0 56px 0;
+}

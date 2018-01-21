@@ -15,9 +15,35 @@ body {
 
 .link {
     text-decoration: none;
+
+    &--button {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    }
+
+    &--more {
+        text-transform: uppercase;
+        font-size: 12px;
+        border-bottom: 1px solid $teal;
+        letter-spacing: 1px;
+
+        &:hover {
+            color: $teal;
+            border: none;
+        }
+    }
+
+    &--green {
+        color: white;
+    }
+
+    &--grey {
+        color: $dark-grey;
+    }
 }
 
-.button {
+.button-area__button {
     @include flex ();
     align-items: center;
     justify-content: center;
@@ -32,6 +58,26 @@ body {
         width: 320px;
     }
 
+    &--white {
+        background-color: white;
+        border: 1px solid #e6e6e6;
+        box-sizing: border-box;
+
+        &:hover {
+            background-color: #e6e6e6;
+        }
+    }
+
+    &--grey-teal {
+        background-color: $light-grey;
+        border: 1px solid $teal;
+        box-sizing: border-box;
+
+        &:hover {
+            background-color: $teal;
+        }
+    }
+
     &--green {
         color: white;
         background-color: $grass-green;
@@ -41,27 +87,18 @@ body {
         }
     }
 
-    &__link {
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 12px;
-        text-decoration: none;
-
-        &--green {
-            color: white;
-        }
-
-        &--grey {
-            color: #323232;
-        }
+    &--inrow {
+        margin-right: 32px;
     }
 }
 
 .headline {
     text-transform: uppercase;
+    letter-spacing: 2px;
 
     &--h1 {
         font-size: $h1-font-size;
+        letter-spacing: 2px;
         color: white;
     }
 
@@ -70,9 +107,22 @@ body {
         font-size: $h2-font-size;
         color: $teal;
         padding-top: 56px;
+        padding-bottom: 32px;
+    }
+
+    &--h3 {
+        font-weight: normal;
+        font-size: $h2-font-size;
+        color: $teal;
+        padding-top: 56px;
+        padding-bottom: 32px;
     }
 
     &--white {
         color: white;
     }
+}
+
+.text {
+    color: $dark-grey;
 }

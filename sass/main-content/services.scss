@@ -7,17 +7,19 @@
     flex-wrap: wrap;
     align-content: space-between;
     justify-content: flex-start;
-    padding-bottom: 56px;
+    padding-bottom: 24px;
 
     &__item {
         @include flex();
+        flex-direction: column;
         background: white;
-        align-items: center;
         justify-content: flex-start;
+        padding-top: 38px;
         height: 100px;
         width: 320px;
-        margin-top: 32px;
+        margin-bottom: 32px;
         margin-right: 32px;
+        box-sizing: border-box;
 
         &:nth-child(3n+3) {
             margin-right: 0;
@@ -25,6 +27,7 @@
 
         &:hover {
             background: $teal;
+            cursor: pointer;
         }
 
         &--treatment {
@@ -106,8 +109,20 @@
     color: $dark-grey;
     text-transform: uppercase;
     padding-left: 110px;
+    letter-spacing: 1px;
 }
 
 .services-list__item:hover .link--services {
     color: white;
 }
+
+.text--price {
+    display: none;
+    color: white;
+    padding-left: 110px;
+    font-size: 12px;
+}
+
+ .services-list__item:hover .text--price{
+     display: block;
+ }

@@ -28,7 +28,7 @@
     border: none;
     cursor: pointer;
     opacity: .7;
-    
+
     &:hover {
         opacity: 1;
     }
@@ -44,13 +44,13 @@
 
 
 .arrow-down {
-        position: absolute;
-        bottom: 32px;
-        margin-left: 48px;
-        background: url('../images/svg/arrow-1st-screen-down.svg') left no-repeat;
-        height: 30px;
-        width: 30px;
-        }
+    position: absolute;
+    bottom: 32px;
+    margin-left: 48px;
+    background: url('../images/svg/arrow-1st-screen-down.svg') left no-repeat;
+    height: 30px;
+    width: 30px;
+    }
 
 .text--1stslider {
     font-size: 18px;
@@ -58,7 +58,7 @@
     margin-top: 32px;
 }
 
-.button--1stscreen {
+.button-area__button--1stscreen {
     margin-top: 52px;
     border: 1px solid white;
 

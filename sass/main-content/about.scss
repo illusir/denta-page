@@ -1,5 +1,4 @@
 .about {
-    background-color: $dark-grey;
     background: url('../images/images/about-dark.jpg') no-repeat;
     background-size: cover;
     width: 100%;
@@ -10,13 +9,12 @@
     @include flex();
     align-items: center;
     justify-content: space-between;
-    overflow: hidden;
 }
 
 .text--aboutslider {
     font-size: 18px;
     color: white;
-    margin-top: 56px;
+    margin-top: 24px;
     line-height: 26px;
 }
 
