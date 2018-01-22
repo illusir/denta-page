@@ -13,6 +13,7 @@
         &--second {
             @include flex ();
             justify-content: space-between;
+            padding: 32px 0 40px 0;
         }
 
         &__text {
@@ -35,12 +36,13 @@
 
 .social {
     @include flex ();
+    align-items: flex-end;
     float: right;
 
     &__link {
         border: none;
         height: 20px;
-        padding-left: 20px;
+        padding-left: 12px;
         text-decoration: none;
         width: 20px;
 
@@ -54,6 +56,7 @@
 
         &--insta {
             background: url('../images/svg/insta.svg') right no-repeat;
+            padding-left: 18px;
         }
 
         &--ok {

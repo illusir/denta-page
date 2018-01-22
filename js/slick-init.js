@@ -3,6 +3,7 @@ $(".slider-firstscreen").slick({
     appendArrows: $('.slider-arrow'),
     prevArrow: $('.slider-arrow--left'),
     nextArrow: $('.slider-arrow--right'),
+	appendDots: $('.slider-dots--1stscreen'),
 });
 
 $(".slider-about").slick({
@@ -10,6 +11,7 @@ $(".slider-about").slick({
     appendArrows: $('.about-arrow'),
     prevArrow: $('.about-arrow--left'),
     nextArrow: $('.about-arrow--right'),
+	appendDots: $('.slider-dots--about'),
 });
 
 $(".slider-feedback").slick({

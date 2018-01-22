@@ -121,7 +121,7 @@
 /* Dots */
 .slick-dotted.slick-slider
 {
-    margin-bottom: 30px;
+    margin-bottom: 0;
 }
 
 .slick-dots
@@ -130,13 +130,18 @@
 
     width: 100%;
     padding: 0;
-    margin-top: 52px;
+    margin-top: 0;
     margin-left: 0;
 
     list-style: none;
 
     text-align: left;
 }
+
+.slick-dots--about {
+    margin-top: 56px;
+}
+
 .slick-dots li
 {
     position: relative;
@@ -159,7 +164,7 @@
 
     width: 10px;
     height: 10px;
-    padding: 5px;
+    padding: 0;
     border-radius: 50%;
 
     cursor: pointer;
